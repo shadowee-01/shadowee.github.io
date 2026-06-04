@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오 - 게임 기획 및 개발자</title>
+    <title>포트폴리오 - 개발자 및 UI제작자 </title>
     <style>
-        /* 기존 a1.html의 디자인 시스템 유지[cite: 1] */
+        /* 제공해주신 a1.html의 스타일 가이드를 그대로 적용했습니다. */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
         html { scroll-behavior: smooth; }
@@ -63,7 +63,7 @@
 
     <nav>
         <div class="nav-container">
-            <div class="logo"><strong>Dev Portfolio.</strong></div>
+            <div class="logo"><strong>Portfolio.</strong></div>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
@@ -73,93 +73,86 @@
         </div>
     </nav>
 
-    <!-- 1. Hero Section -->
+    <!-- 1. Hero Section: 사용자의 현재 목표 반영 -->
     <header id="hero">
-        <h1>창의적인 기획과 <span class="highlight">탄탄한 기술력</span>을 겸비한<br>개발자 OOO입니다.</h1>
-        <p>카페 경영부터 1인 방송, 이제는 게임 개발까지. <br>다양한 경험을 바탕으로 사용자 중심의 결과물을 만듭니다.</p>
-        <a href="#projects" class="btn-primary">프로젝트 포트폴리오 보기 ↓</a>
+        <h1>논리와 구현력을 겸비한<br><span class="highlight">게임 개발자 지망생</span></h1>
+        <p>수학적 분석과 C#/Unity를 활용해 몰입감 있는 전략적 경험을 설계합니다.</p>
+        <a href="#projects" class="btn-primary">프로젝트 성과 확인하기 ↓</a>
     </header>
 
-    <!-- 2. About Me -->
+    <!-- 2. About Me: 사용자의 도전 정신과 가치관 -->
     <section id="about" class="container">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
-            <p>저는 이론에만 매몰되지 않고, 직접 부딪히며 해결책을 찾아내는 <strong>[Develop 이론가]</strong>입니다.[cite: 1]<br>
-            카페 운영을 통해 '고객 경험'을 배웠고, 인터넷 방송을 통해 '콘텐츠의 힘'을 깨달았습니다.<br>
-            현재는 이를 기술적으로 구현하는 게임 개발과 컴퓨터 과학에 몰입하고 있습니다.</p>
+            <p>
+                단순히 코드를 짜는 것에 그치지 않고, 시스템의 <strong>'왜'</strong>를 고민합니다.<br>
+                다양한 실무 경험(카페 운영, 방송)을 통해 얻은 소통 능력과<br>
+                집요하게 문제를 파고드는 <strong>[Develop 이론가]</strong>의 자세로 완성도 높은 결과물을 만듭니다.
+            </p>
             <div class="tags">
-                <span class="tag">#유니티_게임개발</span>
-                <span class="tag">#문제해결중심</span>
-                <span class="tag">#경험기반기획</span>
+                <span class="tag">#Unity_C#</span>
+                <span class="tag">#수학적_게임설계</span>
+                <span class="tag">#실행력_중심</span>
             </div>
         </div>
     </section>
 
-    <!-- 3. Skills -->
+    <!-- 3. Skills: 사용자의 기술 스택 반영 -->
     <section id="skills" class="container">
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-grid">
             <div class="skill-category">
                 <h3>🎮 Game Development</h3>
                 <ul class="skill-list">
-                    <li><span>Unity (3D/UI)</span> <span class="level-high">Intermediate</span></li>
-                    <li><span>C# Scripting</span> <span class="level-high">Intermediate</span></li>
-                    <li><span>Game Design</span> <span>Advanced</span></li>
+                    <li><span>Unity 3D / C#</span> <span class="level-high">Advanced</span></li>
+                    <li><span>Game UI/UX Design</span> <span>Intermediate</span></li>
+                    <li><span>Strategy Logic</span> <span class="level-high">Advanced</span></li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h3>💻 CS & Programming</h3>
+                <h3>📚 CS & Tools</h3>
                 <ul class="skill-list">
                     <li><span>Python / C++</span> <span>Intermediate</span></li>
-                    <li><span>Calculus / Math</span> <span>Intermediate</span></li>
-                    <li><span>AI Tools (Gamma, NotebookLM)</span> <span class="level-high">Advanced</span></li>
+                    <li><span>Math (Calculus)</span> <span class="level-high">Advanced</span></li>
+                    <li><span>Notion / Figma</span> <span class="level-high">Advanced</span></li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- 4. Projects -->
+    <!-- 4. Projects: 핵심 프로젝트 반영 -->
     <section id="projects" class="container">
-        <h2 class="section-title">Key Projects</h2>
+        <h2 class="section-title">Featured Project</h2>
         
-        <!-- 프로젝트 1: Maritime Fight Tactics -->
         <div class="project-card">
             <div class="project-header">
-                <h3>Maritime Fight Tactics (전략 해전 게임)</h3>
-                <p>Unity 기반 3D 전략 시뮬레이션 | 1인 개발</p>
+                <h3>Maritime Fight Tactics: 3D 해상 전략 게임</h3>
+                <p>Unity 기반 개인 프로젝트 | 기획, 개발, UI 디자인 담당</p>
             </div>
             
-            <p><strong>🎯 Project Goal:</strong> 다양한 함선 클래스(항공모함, 잠수함 등)를 활용한 전략적인 3D 해상 전투 시스템 구현.</p>
+            <p><strong>🎯 Project Goal:</strong> 다양한 함선 클래스(항공모함, 구축함 등)의 상성 체계를 이용한 전략적 전투 시스템 구현.</p>
             
             <div class="troubleshooting">
                 <h4>🔥 문제 해결 (Troubleshooting)</h4>
-                <p><strong>[문제 상황]</strong> 복잡한 함선 능력치와 스킬 데이터 관리가 어려워져 시스템 확장성 저하 발생.<br>
-                <strong>[해결 과정]</strong> 데이터 기반 기획을 도입하여 함선별 스탯 시스템을 정형화하고, 유니티 UI 시스템과 연동하여 직관적인 정보 전달 구조 설계.<br>
-                <strong>[결과]</strong> 항공모함 및 구축함 등 개별 유닛의 밸런스 조정 속도 개선 및 UI 시인성 확보.</p>
+                <p><strong>[문제 상황]</strong> 수많은 유닛의 실시간 데이터 처리와 복잡한 스킬 로직으로 인한 성능 저하 발생.<br>
+                <strong>[해결 과정]</strong> 데이터 기반 설계(ScriptableObject)를 도입하여 관리 효율성을 높이고, 수학적 최적화로 연산 부하를 단축함.<br>
+                <strong>[If-Then 극복]</strong> 팀 내 기획 의도와 구현 가능성 사이의 차이가 발생할 때, 프로토타입을 신속하게 제작하여 '구현 가능성'을 먼저 검증하는 프로세스 확립.</p>
             </div>
             
-            <p><strong>📈 주요 성과:</strong></p>
+            <p><strong>📈 주요 기능 (Fact):</strong></p>
             <ul class="fact-list">
-                <li>3D 해상 전투 시스템 및 유닛 스탯 밸런스 설계 완비</li>
-                <li>전략적 플레이를 위한 게임 UI 및 스킬 시스템 구현</li>
+                <li>함선별 고유 스킬 및 상성 시스템 설계 완료</li>
+                <li>Unity UI 시스템을 활용한 사용자 친화적 대시보드 구축</li>
             </ul>
-        </div>
-
-        <!-- 프로젝트 2: Portfolio Web Planning -->
-        <div class="project-card">
-            <div class="project-header">
-                <h3>Personal Portfolio Site Planning</h3>
-                <p>웹 기획 및 설계 프로젝트</p>
-            </div>
-            <p>자신의 커리어 로드맵을 시각화하고 사용자 경험(UX)을 고려한 개인 포트폴리오 사이트 기획안 작성 및 발표.</p>
+            <a href="#" class="highlight">👉 상세 개발 일지 보러가기 ↗</a>
         </div>
     </section>
 
     <!-- 5. Contact -->
     <footer id="contact">
-        <h2>"함께 성장할 파트너를 찾으시나요?"</h2>
-        <p>도전을 두려워하지 않는 개발자, OOO에게 연락주세요.</p>
-        <a href="mailto:your-email@gmail.com" class="btn-primary">이메일 보내기</a>
+        <h2>"새로운 도전과 협업의 기회를 찾고 있습니다."</h2>
+        <p>어제보다 더 성장한 오늘을 만드는 개발자입니다. 함께 고민할 팀을 찾습니다.</p>
+        <a href="mailto:your-email@gmail.com" class="btn-primary">이메일 연락하기</a>
         <br><br>
         <p style="font-size: 0.9rem; margin-top:20px;">Github | LinkedIn | Blog</p>
     </footer>
