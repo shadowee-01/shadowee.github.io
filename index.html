@@ -50,15 +50,18 @@
         /* [Sec 2. About Me] */
         .about-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 800px; margin: 0 auto; text-align: center; }
         .about-text p { color: var(--text-muted); font-size: 1.15rem; margin-bottom: 20px; word-break: keep-all; }
+        .about-text strong { color: #fff; font-weight: 700; background: linear-gradient(180deg, rgba(255,255,255,0) 70%, rgba(59,130,246,0.3) 30%); }
         .about-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; justify-content: center; }
         .tag { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; color: #cbd5e1; }
 
-        /* [Sec 3. Skills & Tools - 상중하를 제거한 고품격 그리드 레이아웃] */
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; }
+        /* [Sec 3. Skills & Tools - 배지 그리드 레이아웃] */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
         .skill-card { background: var(--surface); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; padding: 30px; transition: 0.3s; }
         .skill-card:hover { border-color: #60a5fa; transform: translateY(-5px); }
-        .skill-card h3 { font-size: 1.3rem; margin-bottom: 15px; color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
-        .skill-list li { color: var(--text-muted); font-size: 1rem; margin-bottom: 8px; font-weight: 500; }
+        .skill-card h3 { font-size: 1.3rem; margin-bottom: 20px; color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+        .skill-list { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-list img { height: 35px; border-radius: 4px; transition: transform 0.2s; }
+        .skill-list img:hover { transform: scale(1.05); }
 
         /* [Sec 4. Projects] */
         .projects-container { max-width: 900px; margin: 0 auto; }
@@ -107,10 +110,9 @@
 </head>
 <body>
 
-    <!-- 네비게이션 -->
     <nav id="nav">
         <div class="nav-inner">
-            <div class="logo">박종호.</div>
+            <div class="logo">박종호</div>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
@@ -120,7 +122,6 @@
         </div>
     </nav>
 
-    <!-- 1. Hero Section -->
     <section id="hero">
         <div class="glow"></div>
         <div class="reveal">
@@ -130,13 +131,12 @@
         </div>
     </section>
 
-    <!-- 2. About Me -->
     <section id="about" class="reveal">
         <h2 class="sec-title">About Me.</h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>단순히 주어진 코드를 타이핑하는 것을 넘어, 게임 시스템이 왜 이렇게 설계되어야 하는지 수학적·논리적 근거를 바탕으로 집요하게 파고들고 효율을 찾아냅니다.</p>
-                <p>카페 운영 및 인터넷 방송 등 다양한 경험을 통해 다져진 커뮤니케이션 능력과 강한 실행력을 바탕으로, 팀의 기획을 현실로 구현하는 <strong>'Develop 이론가'</strong>의 자세로 임합니다.</p>
+                <p>단순히 주어진 코드를 타이핑하는 것을 넘어, 게임 시스템이 <strong>왜</strong> 이렇게 설계되어야 하는지 <strong>수학적·논리적 근거</strong>를 바탕으로 집요하게 파고들고 <strong>효율</strong>을 찾아냅니다.</p>
+                <p><strong>카페 운영 및 인터넷 방송</strong> 등 다양한 경험을 통해 다져진 <strong>커뮤니케이션 능력과 강한 실행력</strong>을 바탕으로, 팀의 기획을 현실로 구현하는 <strong>'Develop 이론가'</strong>의 자세로 임합니다.</p>
             </div>
             <div class="about-tags">
                 <span class="tag">#AI_활용</span>
@@ -147,32 +147,33 @@
         </div>
     </section>
 
-    <!-- 3. Skills & Tools (상중하 평가선 제거 버전) -->
     <section id="skills" class="reveal">
         <h2 class="sec-title">Skills & Tools.</h2>
         <div class="skills-grid">
             <div class="skill-card">
                 <h3>🎮 Game & Graphics</h3>
                 <ul class="skill-list">
-                    <li>• Unity</li>
-                    <li>• C#</li>
-                    <li>• C</li>
-                    <li>• 3D Max</li>
+                    <li><img src="https://img.shields.io/badge/Unity-FFFFFF?style=flat-square&logo=Unity&logoColor=white"></li>
+                    <li><img src="https://img.shields.io/badge/C-#A8B9CC?style=flat-square&logo=C&logoColor=white"></li>
+                    <li><img src="https://img.shields.io/badge/C++-#00599C?style=flat-square&logo=C++&logoColor=white></li>
+                     <li><img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"></li>
+                    <li><img src="https://img.shields.io/badge/3ds_Max-000000?style=for-the-badge&logo=autodesk&logoColor=white" alt="3ds Max"></li>
+                    
                 </ul>
             </div>
             <div class="skill-card">
                 <h3>💻 Web & Architecture</h3>
                 <ul class="skill-list">
-                    <li>• 프론트앤드</li>
-                    <li>• 백앤드</li>
-                    <li>• Java</li>
-                    <li>• JavaScript</li>
+                    <li><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" /></li>
+                    <li><img src="https://img.shields.io/badge/JAVA SCRIPT-#F7DF1E?style=flat-square&logo=JAVA SCRIPT&logoColor=white"></li>
+                    <li><img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"></li>
+                    <li><img src="https://img.shields.io/badge/Frontend-3b82f6?style=for-the-badge" alt="Frontend"></li>
+                    <li><img src="https://img.shields.io/badge/Backend-10b981?style=for-the-badge" alt="Backend"></li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- 4. Projects -->
     <section id="projects" class="reveal">
         <h2 class="sec-title">Selected Work.</h2>
         <div class="projects-container">
@@ -181,7 +182,6 @@
                 <h3>Maritime Fight Tactics (해상 전략 게임)</h3>
                 <p class="goal-text"><strong>🎯 핵심 목표 (S.M.A.R.T Goal):</strong> 항공모함, 구축함, 잠수함 등 다양한 함선 클래스의 고유 스킬과 상성 체계를 연동하여, 연산 부하를 최소화한 안정적인 전투 시스템 구축하기 및 플레이어에게 직관적인 UI 만들기</p>
                 
-                <!-- 트러블 슈팅 하이라이트 아키텍처 -->
                 <div class="troubleshooting-box">
                     <h4>🔥 문제 해결 과정 (Troubleshooting)</h4>
                     <p><strong>[문제 상황 (Problem)]</strong> 게임 UI의 복잡성으로 인해 유저의 직관적인 조작이 어렵고, 정보 전달 효율이 떨어져 유저 경험이 저하되는 문제가 발생함.</p>
@@ -199,29 +199,27 @@
         </div>
     </section>
 
-    <!-- 5. Experience & Education -->
     <section id="experience" class="reveal">
         <h2 class="sec-title">Experience & Edu.</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="time-date">과거 - 현재</div>
+                <div class="time-date"과거 - 현재</div>
                 <h3>게임 고도화 프로젝트 및 컴퓨터 학업 정진</h3>
                 <p>C++, Python, Calculus(미적분학) 등 컴퓨터 과학 기술 기반을 공고히 하며, AI 도구를 생산성에 결합하는 고도화 프로세스 연구 중.</p>
             </div>
             <div class="timeline-item">
                 <div class="time-date">Career Milestone</div>
                 <h3>개인 인터넷 방송 진행 및 콘텐츠 크리에이터</h3>
-                <p>실시간으로 다수의 유저들과 소통하고 피드백을 수렴하며, 직관적인 정보 전달과 대중 지향적 커뮤니케이션 감각 체득.</p>
+                <p>실시간으로 다수의 유저들과 소통하고 피드백을 수렴하며, 직관적인 정보 전달과 대중 지향적 커커뮤니케이션 감각 체득.</p>
             </div>
             <div class="timeline-item">
                 <div class="time-date">Career Milestone</div>
                 <h3>개인 카페 창업 및 비즈니스 운영</h3>
-                <p>공간 기획부터 예산 관리, 고객 경험(UX) 최적화 및 레시피 개발까지 비즈니스의 전 과정을 밟으며 강인한 주도성과 실행력 증명</p> 
+                <p>공간 기획부터 예산 관리, 고객 경험 최적화 및 레시피 개발까지 비즈니스의 전 과정을 밟으며 강인한 주도성과 실행력 증명</p>
             </div>
         </div>
     </section>
 
-    <!-- 6. Footer & Contact -->
     <footer id="contact" class="reveal">
         <h2>"새로운 도전과 협업의 기회를 찾고 있습니다."</h2>
         <p>어제보다 더 성장한 오늘을 만드는 개발자입니다. 함께 고민할 팀을 찾습니다.</p>
